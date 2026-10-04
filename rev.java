@@ -11,11 +11,18 @@ public class rev {
             System.out.println("The value of number2 is " + number2);
         }*/
 
-            public static void main (String[] args){
+          /*  public static void main (String[] args){
                 double number1 = 5;
                 int number2 = (int)number1;// add (int) to tell compiler you are convering double to int
 
                 System.out.println("The value of number2 is " + number2);
-            }
+            }*/
+
+    //STRING METHOD
+    public static void main(String[] args){
+        String name = "Linkon";
+
+        System.out.println("My name is " + name.toUpperCase());
+    }
     
 }
