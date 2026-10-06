@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class rev {
     //OPERATORS
     /*public static void main(String[] args){
@@ -26,7 +27,13 @@ public class rev {
     }*/
 
         //STRING FORMATTING
-   public static void main(String[] args){
+        // affirmative specifiers
+        //%f - floating point number/ double number
+        //%d - integer
+        //%s - string
+        //%c - character
+        //%b - boolean
+   /*public static void main(String[] args){
     String name = "Linkon";
     int age = 60;
     String country = "Kenya";
@@ -34,6 +41,21 @@ public class rev {
     String formattedString = String.format("My name is %s. I am %d years old. I live in %s and I work as a %s.", name, age, country, profession);
 
     System.out.println(formattedString);
-   }
+   }*/
+
+    //User Inputting
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("What is your name ?");//println has new character after end of line while print doesn't but youn can add \n
+        String name = scanner.nextLine();
+        System.out.println("My name is " +name);
+
+        System.out.println("What is your age ?");
+        int age = scanner.nextInt();
+        System.out.println("My age is " + age);
+
+        scanner.close();
+    }
     
 }
