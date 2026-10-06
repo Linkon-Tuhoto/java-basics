@@ -19,10 +19,21 @@ public class rev {
             }*/
 
     //STRING METHOD
-    public static void main(String[] args){
+    /*public static void main(String[] args){
         String name = "Linkon";
 
         System.out.println("My name is " + name.toUpperCase());
-    }
+    }*/
+
+        //STRING FORMATTING
+   public static void main(String[] args){
+    String name = "Linkon";
+    int age = 60;
+    String country = "Kenya";
+    String profession = "Software Engineer";
+    String formattedString = String.format("My name is %s. I am %d years old. I live in %s and I work as a %s.", name, age, country, profession);
+
+    System.out.println(formattedString);
+   }
     
 }
