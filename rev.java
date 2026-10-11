@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class rev {
     //OPERATORS
     /*public static void main(String[] args){
@@ -44,7 +45,7 @@ public class rev {
    }*/
 
     //User Inputting
-    public static void main(String[] args){
+    /*public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("What is your name ?");//println has new character after end of line while print doesn't but youn can add \n
@@ -56,6 +57,21 @@ public class rev {
         System.out.println("My age is " + age);
 
         scanner.close();
-    }
+    }*/
+
+        //Conditional Sentences
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            
+            System.out.println("Enter first number: ");
+            int number1 = scanner.nextInt();
+
+            System.out.println("Enter second number: ");
+            int number2 = scanner.nextInt();
+
+            System.out.println("Number one is " + number1 + " and number two is " + number2 + ".");
+
+            scanner.close();
+        }
     
 }
