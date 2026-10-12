@@ -73,6 +73,30 @@ public class rev {
 
             System.out.println("What operation do you want to perform: ");
             String operation = scanner.nextLine();
+            //Switch Case
+            switch(operation) {
+                case "sum":
+                    System.out.printf("%d + %d = %d \n", number1, number2, number1 + number2);
+                    break;
+                case "sub":
+                    System.out.printf("%d - %d = %d \n", number1, number2, number1 - number2);
+                    break;
+                case "div":
+                    if(number2 == 0){
+                        System.out.println("Cannot divide by zero: ");
+                    }
+                    else{
+                        System.out.printf("%d / %d = %d \n", number1, number2, number1 / number2);
+                    }
+                    break;
+                case "mult":
+                    System.out.printf("%d * %d = %d \n", number1, number2, number1 * number2);
+                    break;
+                default:
+                    System.out.printf("%s is not supported operation \n", operation);
+            };
+            /*
+            //If Else Else If
             if(operation.equals("sum")){
                 System.out.printf("%d + %d = %d \n", number1, number2, number1 + number2);
             }
@@ -83,12 +107,16 @@ public class rev {
                 System.out.printf("%d * %d = %d \n", number1, number2, number1 * number2);
             }
             else if(operation.equals("div")){
-                System.out.printf("%d / %d = %d \n", number1, number2 = number1 / number2);
+                if(number2 == 0){
+                    System.out.println("Cannot divide by zero");
+                }
+                else{
+                    System.out.printf("%d / %d = %d \n", number1, number2 = number1 / number2);
+                }
             }
             else{
-                System.out.printf("Input one operation \n");
-            }
-
+                System.out.printf("%s is not supported operation \n", operation);
+            } */
             scanner.close();
         }
     
