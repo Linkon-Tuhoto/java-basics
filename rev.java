@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class rev {
     //OPERATORS
@@ -60,7 +61,7 @@ public class rev {
     }*/
 
         //Conditional Sentences
-        public static void main(String[] args) {
+        /*public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             
             System.out.println("Enter first number: ");
@@ -95,7 +96,7 @@ public class rev {
                 default:
                     System.out.printf("%s is not supported operation \n", operation);
             };
-            /*
+            
             //If Else Else If
             if(operation.equals("sum")){
                 System.out.printf("%d + %d = %d \n", number1, number2, number1 + number2);
@@ -116,8 +117,24 @@ public class rev {
             }
             else{
                 System.out.printf("%s is not supported operation \n", operation);
-            } */
+            } 
             scanner.close();
         }
+        */
+
+    public static void main(String[] args){
+        char vowels[] = new char[5];
+        // you can to declare and intialize arrays in one line
+        //char vowels[] = {'a', 'e', 'i', 'o', 'u'};
+        // change value of an array vowels[3]= 'y';
+        vowels[0]='a';
+        vowels[1]='e';
+        vowels[2]='i';
+        vowels[3]='o';
+        vowels[4]='u';
+
+        System.out.println(Arrays.toString(vowels));
+        System.out.println(vowels.length);
+    }
     
 }
