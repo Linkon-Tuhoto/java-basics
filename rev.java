@@ -65,11 +65,29 @@ public class rev {
             
             System.out.println("Enter first number: ");
             int number1 = scanner.nextInt();
+            scanner.nextLine();
 
             System.out.println("Enter second number: ");
             int number2 = scanner.nextInt();
+            scanner.nextLine();
 
-            System.out.println("Number one is " + number1 + " and number two is " + number2 + ".");
+            System.out.println("What operation do you want to perform: ");
+            String operation = scanner.nextLine();
+            if(operation.equals("sum")){
+                System.out.printf("%d + %d = %d \n", number1, number2, number1 + number2);
+            }
+            else if(operation.equals("sub")){
+                System.out.printf("%d - %d = %d \n", number1, number2, number1 - number2);
+            }
+            else if(operation.equals("mult")){
+                System.out.printf("%d * %d = %d \n", number1, number2, number1 * number2);
+            }
+            else if(operation.equals("div")){
+                System.out.printf("%d / %d = %d \n", number1, number2 = number1 / number2);
+            }
+            else{
+                System.out.printf("Input one operation \n");
+            }
 
             scanner.close();
         }
